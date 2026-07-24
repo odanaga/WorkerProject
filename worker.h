@@ -61,7 +61,7 @@ public:
     void changeName(const FullName& full_name);
     void changeJobTitle(const JobTitle& job_title);
     void changeSalary(const double& salary);
-    void changeEnlistmentYear(const double& enlistment_year);
+    void changeEnlistmentYear(const int& enlistment_year);
 
 private:
     FullName full_name;
