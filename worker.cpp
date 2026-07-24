@@ -1,6 +1,6 @@
 #include "worker.h"
 
-Worker::Worker(const FullName& full_name, const JobTitle& job_title, const double& salary, const double& enlistment_year)
+Worker::Worker(const FullName& full_name, const JobTitle& job_title, const double& salary, const int& enlistment_year)
     : full_name(full_name), job_title(job_title), salary(salary), enlistment_year(enlistment_year)
 {
 }
@@ -21,7 +21,7 @@ double Worker::getSalary()
 {
     return salary;
 }
-double Worker::getEnlistmentYear()
+int Worker::getEnlistmentYear()
 {
     return enlistment_year;
 }
