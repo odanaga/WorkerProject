@@ -4,11 +4,18 @@
 
 enum class JobTitle
 {
-    Dean = 0,
-    Teacher = 1,
-    TechSupport = 2,
-    Curator = 3,
-    Rector = 4,
+    GeneralDirector = 0,
+    President = 1,
+    Rector = 2,
+    ViceRector = 3,
+    HeadOfDepartment = 4,
+    Professor = 5,
+    Docent = 6,
+    SeniorTeacher = 7,
+    Teacher = 8,
+    Assistant = 9,
+    SeniorResearch = 10,
+    Research = 11,
 }; 
 
 struct JobTitleMatch 
@@ -19,11 +26,18 @@ struct JobTitleMatch
 
 const JobTitleMatch job_title_matches[] = 
 {
-    {JobTitle::Dean, "Dean"},
-    {JobTitle::Teacher,"Teacher"},
-    {JobTitle::TechSupport, "TechSupport"},
-    {JobTitle::Curator, "Curator"},
+    {JobTitle::GeneralDirector, "General Director"},
+    {JobTitle::President, "President"},
     {JobTitle::Rector, "Rector"},
+    {JobTitle::ViceRector, "Vice Rector"},
+    {JobTitle::HeadOfDepartment, "Head Of Department"},
+    {JobTitle::Professor, "Professor"},
+    {JobTitle::Docent, "Docent"},
+    {JobTitle::SeniorTeacher, "Senior Teacher"},
+    {JobTitle::Teacher, "Teacher"},
+    {JobTitle::Assistant, "Assistant"},
+    {JobTitle::SeniorResearch, "Senior Research"},
+    {JobTitle::Research, "Research"},
 };
 
 struct FullName
