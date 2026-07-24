@@ -50,14 +50,14 @@ struct FullName
 class Worker
 {
 public:
-    Worker(const FullName& full_name, const JobTitle& job_title, const double& salary, const double& enlistment_year);
+    Worker(const FullName& full_name, const JobTitle& job_title, const double& salary, const int& enlistment_year);
     ~Worker();
 
 public:
     FullName getName();
     JobTitle getJobTitle();
     double getSalary();
-    double getEnlistmentYear();
+    int getEnlistmentYear();
     void changeName(const FullName& full_name);
     void changeJobTitle(const JobTitle& job_title);
     void changeSalary(const double& salary);
@@ -67,5 +67,5 @@ private:
     FullName full_name;
     JobTitle job_title;
     double salary;
-    double enlistment_year;
+    int enlistment_year;
 };
