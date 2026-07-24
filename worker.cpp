@@ -41,7 +41,7 @@ void Worker::changeSalary(const double& salary)
     this->salary = salary;
 }
 
-void Worker::changeEnlistmentYear(const double& enlistment_year)
+void Worker::changeEnlistmentYear(const int& enlistment_year)
 {
     this->enlistment_year = enlistment_year;
 }
